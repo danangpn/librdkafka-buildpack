@@ -1,4 +1,17 @@
 #!/bin/bash
+
+
+
+git clone https://github.com/edenhill/librdkafka.git
+cd librdkafka
+./configure --prefix /usr
+make
+sudo make install
+
+cd ..
+rm -rf librdkafka
+
+
 set -euo pipefail
 
 GO_VERSION="1.9"
@@ -28,3 +41,4 @@ if [ ! -f $GoInstallDir/go/bin/go ]; then
   exit 1
 fi
 
+go get -u github.com/confluentinc/confluent-kafka-go/kafka

@@ -42,12 +42,3 @@ mkdir -p $OUTPUT_DIR/manifest
 cd $TMP_BUILD_DIR
 tar cfz $OUTPUT_DIR/blobs/librdkafka-compiled-${VERSION}.tgz .
 cd -
-
-git clone https://github.com/edenhill/librdkafka.git
-cd librdkafka
-./configure --prefix /usr
-make
-sudo make install
-
-cd ..
-rm -rf librdkafka
