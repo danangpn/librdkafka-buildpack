@@ -1,12 +1,13 @@
 #!/bin/bash
 
 export currentPath="$PWD"
-
+echo $currentPath
+apt-get install pkg-config
 git clone https://github.com/edenhill/librdkafka.git
 cd librdkafka
 ./configure --prefix /usr
 make
-# make install
+make install
 
 cd ..
 rm -rf librdkafka
