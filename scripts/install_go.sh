@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export currentPath = "$PWD"
+export currentPath="$PWD"
 
 git clone https://github.com/edenhill/librdkafka.git
 cd librdkafka
