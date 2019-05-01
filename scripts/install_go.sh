@@ -2,7 +2,7 @@
 
 export currentPath="$PWD"
 echo $currentPath
-apt-get install pkg-config
+apt install pkg-config
 git clone https://github.com/edenhill/librdkafka.git
 cd librdkafka
 ./configure --prefix /usr
