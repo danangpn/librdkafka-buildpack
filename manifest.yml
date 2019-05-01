@@ -3,7 +3,7 @@ default_versions:
   version: 0.11.1
 dependencies:
 - cf_stacks:
-  - cflinuxfs2
+  - cflinuxfs3
   md5: 0cae456907979c7eec210d5029c0b941
   name: librdkafka
   uri: http://librdkafka-buildpack.s3-website-us-east-1.amazonaws.com/blobs/librdkafka/librdkafka-compiled-0.11.1.tgz
