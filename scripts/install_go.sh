@@ -7,7 +7,7 @@ cd librdkafka
 ./configure --prefix /usr
 make
 make install
-
+locate rdkafka.pc
 cd ..
 rm -rf librdkafka
 
