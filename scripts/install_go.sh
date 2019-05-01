@@ -1,6 +1,6 @@
 #!/bin/bash
 
-currentPath = $PWD
+set currentPath = $PWD
 
 git clone https://github.com/edenhill/librdkafka.git
 cd librdkafka
@@ -11,7 +11,7 @@ make
 cd ..
 rm -rf librdkafka
 
-cd currentPath
+cd $currentPath
 set -euo pipefail
 
 GO_VERSION="1.9"
