@@ -41,4 +41,4 @@ if [ ! -f $GoInstallDir/go/bin/go ]; then
   exit 1
 fi
 
-go get -u github.com/confluentinc/confluent-kafka-go/kafka
+# go get -u github.com/confluentinc/confluent-kafka-go/kafka
