@@ -8,7 +8,7 @@ cd librdkafka
 make
 make install
 cd ..
-rm -rf librdkafka
+# rm -rf librdkafka
 
 cd $currentPath
 set -euo pipefail
